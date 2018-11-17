@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AdminTool.h"
+
 
 int main(int argc, const char * argv[]) {
+    NSLock *lock = [NSLock new];
+    AdminTool *adminTool = [AdminTool sharedInstance];
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        [lock lock];
+        [adminTool runWithCompletionHandler:^{
+            [lock unlock];
+        }];
+        [lock lock];
     }
-    return 0;
+    return [adminTool exitStatus];
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F8EBFF94219F90330010CE88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EBFF93219F90330010CE88 /* main.m */; };
+		F8EBFFC7219F90720010CE88 /* SystemAdministration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EBFFC6219F90720010CE88 /* SystemAdministration.framework */; };
+		F8EBFFCA219F91BC0010CE88 /* AdminTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EBFFC9219F91BC0010CE88 /* AdminTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,53 @@
 /* Begin PBXFileReference section */
 		F8EBFF90219F90330010CE88 /* ctladminsys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ctladminsys; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EBFF93219F90330010CE88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8EBFF9B219F90650010CE88 /* ADMPowerActivityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMPowerActivityManager.h; sourceTree = "<group>"; };
+		F8EBFF9C219F90650010CE88 /* ADMRemoteAEConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMRemoteAEConfig.h; sourceTree = "<group>"; };
+		F8EBFF9D219F90650010CE88 /* ADMSystemClock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMSystemClock.h; sourceTree = "<group>"; };
+		F8EBFF9E219F90650010CE88 /* ADMPrinterSharingConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMPrinterSharingConfig.h; sourceTree = "<group>"; };
+		F8EBFF9F219F90650010CE88 /* DOAsyncResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOAsyncResult.h; sourceTree = "<group>"; };
+		F8EBFFA0219F90650010CE88 /* DOAsyncResultProtocol-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOAsyncResultProtocol-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFA1219F90650010CE88 /* ADMUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMUser.h; sourceTree = "<group>"; };
+		F8EBFFA2219F90650010CE88 /* ADM_NVRAMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADM_NVRAMConfig.h; sourceTree = "<group>"; };
+		F8EBFFA3219F90650010CE88 /* ADMParentalControlsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMParentalControlsConfig.h; sourceTree = "<group>"; };
+		F8EBFFA4219F90650010CE88 /* ADMARDConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMARDConfig.h; sourceTree = "<group>"; };
+		F8EBFFA5219F90650010CE88 /* ADMSysKeyChainConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMSysKeyChainConfig.h; sourceTree = "<group>"; };
+		F8EBFFA6219F90650010CE88 /* ADMGuestUserConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMGuestUserConfig.h; sourceTree = "<group>"; };
+		F8EBFFA7219F90650010CE88 /* SharingWriteConfigSync-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SharingWriteConfigSync-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFA8219F90650010CE88 /* ADMNetworkTimeServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMNetworkTimeServer.h; sourceTree = "<group>"; };
+		F8EBFFA9219F90650010CE88 /* KeyChainWriteConfigSync-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyChainWriteConfigSync-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFAA219F90650010CE88 /* ADMWebServerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMWebServerConfig.h; sourceTree = "<group>"; };
+		F8EBFFAB219F90650010CE88 /* ADMUserAccountUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMUserAccountUtilities.h; sourceTree = "<group>"; };
+		F8EBFFAC219F90650010CE88 /* AdminDSAuthenticator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdminDSAuthenticator.h; sourceTree = "<group>"; };
+		F8EBFFAD219F90650010CE88 /* AdminAuthenticator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdminAuthenticator.h; sourceTree = "<group>"; };
+		F8EBFFAE219F90650010CE88 /* XPCWriteConfigProtocol-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPCWriteConfigProtocol-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFAF219F90650010CE88 /* ADMLoginPrefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMLoginPrefs.h; sourceTree = "<group>"; };
+		F8EBFFB0219F90650010CE88 /* CDStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		F8EBFFB1219F90650010CE88 /* ADMNetworkTimeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMNetworkTimeClient.h; sourceTree = "<group>"; };
+		F8EBFFB2219F90650010CE88 /* ADMInternetServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMInternetServices.h; sourceTree = "<group>"; };
+		F8EBFFB3219F90650010CE88 /* NSDictionary-cXMLDataConvertor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-cXMLDataConvertor.h"; sourceTree = "<group>"; };
+		F8EBFFB4219F90650010CE88 /* MCXPrefObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCXPrefObject.h; sourceTree = "<group>"; };
+		F8EBFFB5219F90650010CE88 /* ADMAccountPasswordPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMAccountPasswordPolicy.h; sourceTree = "<group>"; };
+		F8EBFFB6219F90650010CE88 /* ADMDynamicDNSConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMDynamicDNSConfig.h; sourceTree = "<group>"; };
+		F8EBFFB7219F90650010CE88 /* AdminDirectoryService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdminDirectoryService.h; sourceTree = "<group>"; };
+		F8EBFFB8219F90650010CE88 /* UsersWriteConfigSync-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UsersWriteConfigSync-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFB9219F90650010CE88 /* ADMHostConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMHostConfig.h; sourceTree = "<group>"; };
+		F8EBFFBA219F90650010CE88 /* ADMGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMGroup.h; sourceTree = "<group>"; };
+		F8EBFFBB219F90650010CE88 /* ADMDSRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMDSRecord.h; sourceTree = "<group>"; };
+		F8EBFFBC219F90650010CE88 /* FilesFinderWriteConfigSync-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FilesFinderWriteConfigSync-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFBD219F90650010CE88 /* ADMDSNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMDSNode.h; sourceTree = "<group>"; };
+		F8EBFFBE219F90650010CE88 /* ADMRemoteUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMRemoteUser.h; sourceTree = "<group>"; };
+		F8EBFFBF219F90650010CE88 /* XPCWriteConfigSync-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPCWriteConfigSync-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFC0219F90650010CE88 /* UserUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserUtilities.h; sourceTree = "<group>"; };
+		F8EBFFC1219F90650010CE88 /* SFAuthorization-SFAuthorization_SystemAdministration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFAuthorization-SFAuthorization_SystemAdministration.h"; sourceTree = "<group>"; };
+		F8EBFFC2219F90650010CE88 /* GroupsWriteConfigSync-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroupsWriteConfigSync-Protocol.h"; sourceTree = "<group>"; };
+		F8EBFFC3219F90650010CE88 /* WriteConfigOnewayMessageDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteConfigOnewayMessageDispatcher.h; sourceTree = "<group>"; };
+		F8EBFFC4219F90650010CE88 /* WriteConfigClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteConfigClient.h; sourceTree = "<group>"; };
+		F8EBFFC6219F90720010CE88 /* SystemAdministration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemAdministration.framework; path = ../../../../System/Library/PrivateFrameworks/SystemAdministration.framework; sourceTree = "<group>"; };
+		F8EBFFC8219F91BC0010CE88 /* AdminTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdminTool.h; sourceTree = "<group>"; };
+		F8EBFFC9219F91BC0010CE88 /* AdminTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdminTool.m; sourceTree = "<group>"; };
+		F8EBFFCB219F931C0010CE88 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F8EBFFCC219F9CC80010CE88 /* input.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = input.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EBFFC7219F90720010CE88 /* SystemAdministration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +91,11 @@
 		F8EBFF87219F90330010CE88 = {
 			isa = PBXGroup;
 			children = (
+				F8EBFFCC219F9CC80010CE88 /* input.plist */,
+				F8EBFF9A219F90650010CE88 /* SystemAdministration */,
 				F8EBFF92219F90330010CE88 /* ctladminsys */,
 				F8EBFF91219F90330010CE88 /* Products */,
+				F8EBFFC5219F90720010CE88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +111,68 @@
 			isa = PBXGroup;
 			children = (
 				F8EBFF93219F90330010CE88 /* main.m */,
+				F8EBFFCB219F931C0010CE88 /* Constants.h */,
+				F8EBFFC8219F91BC0010CE88 /* AdminTool.h */,
+				F8EBFFC9219F91BC0010CE88 /* AdminTool.m */,
 			);
 			path = ctladminsys;
+			sourceTree = "<group>";
+		};
+		F8EBFF9A219F90650010CE88 /* SystemAdministration */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBFF9B219F90650010CE88 /* ADMPowerActivityManager.h */,
+				F8EBFF9C219F90650010CE88 /* ADMRemoteAEConfig.h */,
+				F8EBFF9D219F90650010CE88 /* ADMSystemClock.h */,
+				F8EBFF9E219F90650010CE88 /* ADMPrinterSharingConfig.h */,
+				F8EBFF9F219F90650010CE88 /* DOAsyncResult.h */,
+				F8EBFFA0219F90650010CE88 /* DOAsyncResultProtocol-Protocol.h */,
+				F8EBFFA1219F90650010CE88 /* ADMUser.h */,
+				F8EBFFA2219F90650010CE88 /* ADM_NVRAMConfig.h */,
+				F8EBFFA3219F90650010CE88 /* ADMParentalControlsConfig.h */,
+				F8EBFFA4219F90650010CE88 /* ADMARDConfig.h */,
+				F8EBFFA5219F90650010CE88 /* ADMSysKeyChainConfig.h */,
+				F8EBFFA6219F90650010CE88 /* ADMGuestUserConfig.h */,
+				F8EBFFA7219F90650010CE88 /* SharingWriteConfigSync-Protocol.h */,
+				F8EBFFA8219F90650010CE88 /* ADMNetworkTimeServer.h */,
+				F8EBFFA9219F90650010CE88 /* KeyChainWriteConfigSync-Protocol.h */,
+				F8EBFFAA219F90650010CE88 /* ADMWebServerConfig.h */,
+				F8EBFFAB219F90650010CE88 /* ADMUserAccountUtilities.h */,
+				F8EBFFAC219F90650010CE88 /* AdminDSAuthenticator.h */,
+				F8EBFFAD219F90650010CE88 /* AdminAuthenticator.h */,
+				F8EBFFAE219F90650010CE88 /* XPCWriteConfigProtocol-Protocol.h */,
+				F8EBFFAF219F90650010CE88 /* ADMLoginPrefs.h */,
+				F8EBFFB0219F90650010CE88 /* CDStructures.h */,
+				F8EBFFB1219F90650010CE88 /* ADMNetworkTimeClient.h */,
+				F8EBFFB2219F90650010CE88 /* ADMInternetServices.h */,
+				F8EBFFB3219F90650010CE88 /* NSDictionary-cXMLDataConvertor.h */,
+				F8EBFFB4219F90650010CE88 /* MCXPrefObject.h */,
+				F8EBFFB5219F90650010CE88 /* ADMAccountPasswordPolicy.h */,
+				F8EBFFB6219F90650010CE88 /* ADMDynamicDNSConfig.h */,
+				F8EBFFB7219F90650010CE88 /* AdminDirectoryService.h */,
+				F8EBFFB8219F90650010CE88 /* UsersWriteConfigSync-Protocol.h */,
+				F8EBFFB9219F90650010CE88 /* ADMHostConfig.h */,
+				F8EBFFBA219F90650010CE88 /* ADMGroup.h */,
+				F8EBFFBB219F90650010CE88 /* ADMDSRecord.h */,
+				F8EBFFBC219F90650010CE88 /* FilesFinderWriteConfigSync-Protocol.h */,
+				F8EBFFBD219F90650010CE88 /* ADMDSNode.h */,
+				F8EBFFBE219F90650010CE88 /* ADMRemoteUser.h */,
+				F8EBFFBF219F90650010CE88 /* XPCWriteConfigSync-Protocol.h */,
+				F8EBFFC0219F90650010CE88 /* UserUtilities.h */,
+				F8EBFFC1219F90650010CE88 /* SFAuthorization-SFAuthorization_SystemAdministration.h */,
+				F8EBFFC2219F90650010CE88 /* GroupsWriteConfigSync-Protocol.h */,
+				F8EBFFC3219F90650010CE88 /* WriteConfigOnewayMessageDispatcher.h */,
+				F8EBFFC4219F90650010CE88 /* WriteConfigClient.h */,
+			);
+			path = SystemAdministration;
+			sourceTree = "<group>";
+		};
+		F8EBFFC5219F90720010CE88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBFFC6219F90720010CE88 /* SystemAdministration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8EBFF94219F90330010CE88 /* main.m in Sources */,
+				F8EBFFCA219F91BC0010CE88 /* AdminTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +356,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35AXSC32YT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Debug;
 		};
@@ -251,6 +369,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35AXSC32YT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Release;
 		};
